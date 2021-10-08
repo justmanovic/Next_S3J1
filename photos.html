@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <header>
+    <h1><a href="index.html"> Mon incroyable restaurant</a></h1>
+    <ul>
+      <li>
+        <a href="index.html">Le restaurant</a>
+      </li>
+      <li>
+        <a href="menu.html">Menu</a>
+      </li>
+      <li>
+        <a href="photos.html">Photos</a>
+      </li>
+    </ul>
+  </header>
+  <main class="main photo">
+    <!-- <h2>Photos</h2> -->
+    <div class="container container-photo">
+      <div class="draggable photos" draggable="true">
+        <img src="https://source.unsplash.com/1600x900/?food,restaurant?1" alt="">
+      </div>
+      <div class="draggable photos" draggable="true">
+        <img src="https://source.unsplash.com/1600x900/?food,restaurant?2" alt="">
+      </div>
+      <div class="draggable photos" draggable="true">
+        <img src="https://source.unsplash.com/1600x900/?food,restaurant?3" alt="">
+      </div>
+      <div class="draggable photos" draggable="true">
+        <img src="https://source.unsplash.com/1600x900/?food,restaurant?4" alt="">
+      </div>
+      <div class="draggable photos" draggable="true">
+        <img src="https://source.unsplash.com/1600x900/?food,restaurant?5" alt="">
+      </div>
+      <div class="draggable photos" draggable="true">
+        <img src="https://source.unsplash.com/1600x900/?food,restaurant?6" alt="">
+      </div>
+      <div class="draggable photos" draggable="true">
+        <img src="https://source.unsplash.com/1600x900/?food,restaurant?7" alt="">
+      </div>
+      <div class="draggable photos" draggable="true">
+        <img src="https://source.unsplash.com/1600x900/?food,restaurant?8" alt="">
+      </div>
+    </div>
+  </main>
+
+  <div class="popup-container" id="popup-container">
+    <div id="popup" class="popup">
+      <button class="close-btn" id="close"><i class="fa fa-times"></i></button>
+      <p>Si tu pars, tout est fini entre nous !</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

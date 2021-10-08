@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Noto+Sans+Display:ital,wght@0,100;0,400;0,700;1,400&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Montserrat';
+  position: relative;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 1.5rem;
+  /* margin-bottom: 1rem; */
+  height: 10vh;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+}
+
+header ul li:not(:last-of-type) {
+  margin-right: 1rem;
+} 
+
+header a:hover {
+  text-decoration: underline;
+}
+
+nav {
+
+  /* border: 2px red solid; */
+}
+
+h2.title {
+  background-color: black;
+  padding: 0.25rem;
+}
+
+.main {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+  /* border: 3px red solid; */
+}
+
+.main.index {
+  background: url(https://ieltsdream.com/wp-content/uploads/2019/07/a-restaurant-that-provided-you-bad-food-service-1200x675.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: middle;
+  align-items: center;
+  color: white;
+}
+
+.main h4 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.container-menu {
+  /* border: 2px black solid; */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+  width: 40rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  height: min-content;
+  padding: 2rem 0;
+  min-height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-menu ul {
+  list-style: none;
+}
+
+.container-menu ul li:first-of-type {
+  margin-top: 0.5rem;
+}
+
+.category {
+  /* border: 1px blue solid; */
+  margin-top: 1rem;
+}
+
+.popup-container {
+  background-color: rgba(0,0,0,0.6);
+  display: none;
+  position: fixed;
+  inset: 0;
+  animation-name:popup-open;
+  animation-duration: 0.25s;
+}
+
+.popup {
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  max-width: 100%;
+  width: 20rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#change-menu {
+  border: 0;
+  background:#92DACA;
+  padding: 1rem 2rem;
+  font-family: inherit;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.5rem;
+  border: 0;
+  background-color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.photos-container {
+
+}
+
+.photos {
+  width: 15rem;
+  height: 15rem;
+}
+
+.photos img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.photos-container {
+  /* border: 3px lime solid; */
+
+}
+
+.main.photo {
+  /* border: 2px red solid; */
+  padding: 2rem;
+}
+
+.container {
+  /* border: 2px lime solid; */
+  height: 100%;
+}
+
+.container.container-photo {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 1rem;
+}
+
+.draggable.dragging {
+  opacity: .5;
+  border: 2px black dotted;
+}
+
+@keyframes popup-open {
+  0% {
+    opacity:0
+  }
+  100% {
+    opacity: 1;
+  }
+}
